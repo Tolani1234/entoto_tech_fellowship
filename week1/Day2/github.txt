@@ -1,0 +1,15 @@
+Git: is version control,is local
+ more important;
+       git init
+       git status
+       git add
+       git comment
+       git log--online
+       git check out
+       git reset
+Gitbub: Online or remote,very powerfull.
+github: divided into two
+1 github push:send
+2 git pull:receved
+
+

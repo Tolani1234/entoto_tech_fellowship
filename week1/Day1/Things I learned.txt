@@ -1,0 +1,6 @@
+1, Introduction to programming language.
+2, Introduction to JavaScript.
+3, Command line basics.
+4, How to search in google.
+5, Introduction to web developement.
+6, Wengi is awesome.
