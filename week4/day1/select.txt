@@ -1,0 +1,82 @@
+//select
+SELECT CustomerName,City FROM Customer_management; 
+//Distinct
+SELECT DISTINCT City FROM Customer_management; 
+//where
+SELECT * FROM Customer_management
+WHERE CustomerId=1;
+//And&Or
+SELECT * FROM Customer_management
+WHERE Country='Ethiopia'
+AND (City='shogole' OR City='finfine');
+//order by
+SELECT * FROM customer_management
+ORDER BY Address;
+//insert into
+INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
+ VALUES ('redu','Telegram','france','finfie','4006','canada');
+//update
+UPDATE Customer_management
+SET ContactName='Alfred Schmidt', City='Hamburg'
+WHERE CustomerName='leduteshome'; 
+//delete
+DELETE FROM customer_management
+WHERE CustomerName='tolani' AND ContactName='email'; 
+//injection
+SELECT * FROM customer_management WHERE customerId = 2 or 1=1
+//select Top
+SELECT TOP 2 * FROM customer_management; 
+//like
+SELECT * FROM Customers
+WHERE City LIKE 'F%'; 
+//between
+SELECT * FROM customer_management
+WHERE city BETWEEN 1 AND 2; 
+
+//alias_
+select city As twon from customer_management
+//Ascending Order
+SELECT * FROM customer_management ORDER BY Country, customer_Name;
+ordering by ASCII standard/prints from top to bottom
+//Ascending and Descending Order
+SELECT * FROM customer_management ORDER BY country ASC, customer_Name DESC;
+//Descending
+SELECT * FROM customer_management ORDER BY cusromercontact DESC;
+// inner join
+SELECT customer_management.customer_Name, orders.orderId
+FROM customer_management
+INNER JOIN orders
+ON customer_management.customer_Id=orders.customerId
+ORDER BY customer_management.customer_Name;
+//left join
+SELECT customer_management.customer_Name, orders.orderId
+FROM customer_management
+LEFT JOIN orders
+ON customer_management.customer_Id=orders.customerId
+ORDER BY customer_management.customer_Name; 
+//Union
+SELECT city FROM customer_management
+UNION ALL
+SELECT city FROM customer_management
+ORDER BY city; 
+//create databasedbname
+CREATE DATABASE tolani;
+//create databasemy-db
+create database my tolani
+//create table
+CREATE TABLE table_name
+ (
+column_name1 data_type(size),
+column_name2 data_type(size),
+column_name3 data_type(size),
+ ....
+ );
+//Not Null
+CREATE TABLE PersonsNotNull
+ (
+ P_Id int NOT NULL,
+ LastName varchar(255) NOT NULL,
+ FirstName varchar(255),
+ Address varchar(255),
+ City varchar(255)
+ ) 

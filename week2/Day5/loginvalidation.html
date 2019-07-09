@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signin validation</title>
+
+    <script> 
+    info = {
+        username: "Tolani",
+        password: "1234"
+    }
+    function user(){
+       
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('passsword').value;
+      if (username == info.username && password == info.password){
+          window.location.href="./Aboutwebsit.html";
+       } else {
+           alert('incorrect username or password');
+       }
+    }
+</script>
+<style>
+.signinBorder{
+    background-color: palevioletred;
+    border: 2px blue;
+    border-radius: 30px;
+    margin-left: 550px;
+    margin-right: 500px;
+    padding-bottom: opx;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    height: 400px;
+    border-radius: solid 30%;
+    }
+</style>
+</head>
+
+<body>
+
+    <div class="signinBorder">   
+        <h1 style="color: blue;">Signin</h1>     
+        UserName: <input type="username" id="username" placeholder=""><br><br>
+        Password: <input type="password" id="passsword" placeholder=""><br><br>
+       <button onclick="user()">Submit</button><br><br>
+    
+    </div>
+</body>
+</html>

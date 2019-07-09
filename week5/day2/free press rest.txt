@@ -1,0 +1,5 @@
+thing to do;
+1.download a free theme for a restaurant
+2.install it $ activate it
+  i./wp_content/themes
+3.add content to your website

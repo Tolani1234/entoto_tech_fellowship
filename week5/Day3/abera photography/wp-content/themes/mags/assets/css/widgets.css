@@ -1,0 +1,13 @@
+.section-header {
+	background-color: #f3f3f3;
+	padding: 5px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.customize-control input[type=number] {
+	width: 50px;
+}
+.accordion-section:not(#sub-accordion-section-sidebar-widgets-mags_front_page_content_section) .widget-content .mags-widget-display-control,
+.widgets-holder-wrap .widgets-sortables:not(#mags_front_page_content_section) .widget-content .mags-widget-display-control {
+	display: none;
+}

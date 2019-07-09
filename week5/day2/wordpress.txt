@@ -1,0 +1,2 @@
+http://localhost/php.injera/(website)
+http://http://localhost/php.injera/wp-admin/

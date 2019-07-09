@@ -1,0 +1,12 @@
+.signinBorder{
+background-color: palevioletred;
+border: 2px blueviolet;
+margin-left: 550px;
+margin-right: 500px;
+padding-bottom: opx;
+padding-top: 25px;
+text-align: center;
+font-size: 20px;
+font-family: 'Times New Roman';
+height: 400px;
+}
